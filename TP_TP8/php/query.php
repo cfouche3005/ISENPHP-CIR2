@@ -5,18 +5,18 @@
 
     $db = dbConnect();
     $auteur = dbGetAuthorsNames($db);
-    for($i=0;$i<count($auteur);$i++){
-        echo $auteur[$i]['prenom']." ".$auteur[$i]['nom']."<br/>";
+    for ($i = 0; $i < count($auteur); $i++) {
+        echo $auteur[$i]['prenom'] . " " . $auteur[$i]['nom'] . "<br/>";
     };
 
     $quotes = dbGetQuotes($db);
-    for($i=0;$i<count($quotes);$i++){
-        echo $quotes[$i]['phrase']."<br/>";
+    for ($i = 0; $i < count($quotes); $i++) {
+        echo $quotes[$i]['phrase'] . "<br/>";
     };
 
     $century = dbGetCenturies($db);
-    for($i=0;$i<count($century);$i++){
-        echo $century[$i]['numero']."<br/>";
+    for ($i = 0; $i < count($century); $i++) {
+        echo $century[$i]['numero'] . "<br/>";
     }
 
 ?>
